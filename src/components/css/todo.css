@@ -1,0 +1,77 @@
+.main_container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(#9d4edd, #c77dff);
+}
+.todo_container{
+    display: flex;
+    height: 92%;
+    padding-top: 50px;
+    width: 60vw;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+.titleName{
+    margin-top: 20px;
+}
+.addItems{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+input{
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+}
+.addBtn{
+    margin-left: -24px;
+    cursor: pointer;
+}
+.showItem{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+}
+.itemName{
+    width: 80%;
+    text-transform: capitalize;
+    word-wrap: break-word;
+}
+.trashBtn{
+    cursor: pointer;
+}
+.itemBtn{
+    text-align: center;
+    margin-top: 20px;
+}
+.clearBtn{
+    background: #3c096c;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.clearBtn:hover{
+    transform: scale(1.1);
+}
