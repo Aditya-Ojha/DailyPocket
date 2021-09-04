@@ -14,9 +14,7 @@ function Home(){
         const apiData = async () => {
             const api = "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=a99b2e2583b64afc879864956c2c0794"
             const getData = await fetch(api);
-            setTimeout(function () { }, 5000);
             const jsonData = await getData.json();
-            setTimeout(function () { }, 5000);
             setArticle(jsonData.articles);
         }
         apiData();
