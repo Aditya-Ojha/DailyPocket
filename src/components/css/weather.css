@@ -10,7 +10,7 @@
 .weatherBox{
     height: 80vh;
     width: 30vw;
-    background-image: linear-gradient(#9d4edd, #c77dff);   
+    /* background-image: linear-gradient(#9d4edd, #c77dff);    */
     border-radius: 0.625rem;
     position: relative;
     box-shadow: .125rem .0625rem .125rem .125rem #c77dff;

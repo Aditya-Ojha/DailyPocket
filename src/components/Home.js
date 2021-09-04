@@ -14,14 +14,13 @@ function Home(){
         const apiData = async () => {
             const api = "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=a99b2e2583b64afc879864956c2c0794"
             const getData = await fetch(api);
+            setTimeout(function () { }, 1000);
             const jsonData = await getData.json();
-            let arr = jsonData.articles;
-            console.log(jsonData.articles);
-            console.log(arr[0]);
+            setTimeout(function () { }, 1000);
             setArticle(jsonData.articles);
         }
         apiData();
-    }, [])
+    })
 
     return(
         <>
@@ -33,7 +32,7 @@ function Home(){
                         <div className="newsContainer">
 
                             {
-                                article.map((ele, idx) => {
+                                (article)?(article.map((ele, idx) => {
                                     return (
                                         <div className="news" key={idx}>
                                             <NewsCard
@@ -43,7 +42,9 @@ function Home(){
                                             />
                                         </div>
                                     )
-                                })
+                                })):(
+                                    <h1>Loading....</h1>
+                                )
                             }
                         </div>
                     </div>

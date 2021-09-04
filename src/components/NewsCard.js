@@ -22,7 +22,7 @@ export default function NewsCard(props) {
 
   return (
     <>
-      <a href={props.url} target="_blank">
+      <Link to={props.url}>
         <Card className={classes.root} className="cardDeco">
           <CardActionArea>
             <CardMedia
@@ -37,7 +37,7 @@ export default function NewsCard(props) {
             </CardContent>
           </CardActionArea>
         </Card>
-      </a>
+      </Link>
       </>
   );
 }
